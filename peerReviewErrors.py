@@ -42,13 +42,13 @@ def checkCave(chosenCave):
 		print('Gobbles you down in one bite!')
 
 playAgain = 'yes'
-while playAgain = 'yes' or playAgain = 'y':
+while playAgain == 'yes' or playAgain == 'y':
 	displayIntro()
 	caveNumber = choosecave()
 	checkCave(caveNumber)
     
 	print('Do you want to play again? (yes or no)')
 	playAgain = input()
-	if playAgain == "no":
+	if playAgain == "no" or playAgain == "n":
 		print("Thanks for playing")
 
