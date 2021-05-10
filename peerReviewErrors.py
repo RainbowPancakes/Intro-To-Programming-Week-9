@@ -8,22 +8,22 @@
 import random
 import time
 
-def displayIntro():
+def display_intro():
 	print('''	You are in a land full of dragons. In front of you,
 	you see two caves. In one cave, the dragon is friendly
 	and will share his treasure with you. The other dragon
 	is greedy and hungry, and will eat you on sight.''')
 	print()
 
-def chooseCave():
+def choose_cave():
 	cave = ''
 	while cave != '1' and cave != '2':
 		print('Which cave will you go into? (1 or 2)')
 		cave = input()
 
-	return caves
+	return cave
 
-def checkCave(chosenCave):
+def check_cave(chosen_cave):
 	print('You approach the cave...')
 	#sleep for 2 seconds
 	time.sleep(2)
@@ -34,21 +34,21 @@ def checkCave(chosenCave):
 	print()
 	#sleep for 2 seconds
 	time.sleep(2)
-	friendlyCave = random.randint(1, 2)
+	friendly_cave = random.randint(1, 2)
 
-	if chosenCave == str(friendlyCave):
+	if chosen_cave == str(friendly_cave):
 		print('Gives you his treasure!')
 	else:
 		print('Gobbles you down in one bite!')
 
-playAgain = 'yes'
-while playAgain == 'yes' or playAgain == 'y':
-	displayIntro()
-	caveNumber = choosecave()
-	checkCave(caveNumber)
+play_again = 'yes'
+while play_again == 'yes' or play_again == 'y':
+	display_intro()
+	cave_number = choose_cave()
+	check_cave(cave_number)
     
 	print('Do you want to play again? (yes or no)')
-	playAgain = input()
-	if playAgain == "no" or playAgain == "n":
+	play_again = input()
+	if play_again == "no" or play_again == "n":
 		print("Thanks for playing")
 
