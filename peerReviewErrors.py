@@ -48,7 +48,7 @@ while play_again == 'yes' or play_again == 'y':
 	check_cave(cave_number)
     
 	print('Do you want to play again? (yes or no)')
-	play_again = input()
+	play_again = input().lower()
 	if play_again == "no" or play_again == "n":
 		print("Thanks for playing")
 
