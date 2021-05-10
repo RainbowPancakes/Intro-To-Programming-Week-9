@@ -9,6 +9,7 @@ import random
 import time
 
 def display_intro():
+	"""Function to display an intro"""
 	print('''	You are in a land full of dragons. In front of you,
 	you see two caves. In one cave, the dragon is friendly
 	and will share his treasure with you. The other dragon
@@ -16,6 +17,7 @@ def display_intro():
 	print()
 
 def choose_cave():
+	"""Function to choose a cave"""
 	cave = ''
 	while cave != '1' and cave != '2':
 		print('Which cave will you go into? (1 or 2)')
@@ -24,6 +26,7 @@ def choose_cave():
 	return cave
 
 def check_cave(chosen_cave):
+	"""Function to check if the chosen cave is good or bad"""
 	print('You approach the cave...')
 	#sleep for 2 seconds
 	time.sleep(2)
