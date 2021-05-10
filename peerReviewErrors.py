@@ -16,7 +16,7 @@ def displayIntro():
 	print()
 
 def chooseCave():
-    cave = ''
+	cave = ''
 	while cave != '1' and cave != '2':
 		print('Which cave will you go into? (1 or 2)')
 		cave = input()
@@ -28,7 +28,7 @@ def checkCave(chosenCave):
 	#sleep for 2 seconds
 	time.sleep(2)
 	print('It is dark and spooky...')
-	#sleep for 2 seconds
+	#sleep for 3 seconds
 	time.sleep(3)
 	print('A large dragon jumps out in front of you! He opens his jaws and...')
 	print()
